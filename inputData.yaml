@@ -1,0 +1,38 @@
+# file with an input data for appointment manager
+
+---
+
+# List of attendees
+attendees:
+  - name: "John Doe"
+    existing_appointments:
+      - { start: 11-05-2014 09:15:00, tz: Europe/Kiev, duration: 15m, agenda: "Morning Meeting"}
+      - { start: 11-05-2014 17:00:00, tz: Europe/Kiev, duration: 30m, agenda: "Code Review"}
+      - { start: 11-05-2014 10:15:00, tz: Europe/Kiev, duration: 1h, agenda: "Code Review"}
+    working_time_start: 09:00AM
+    working_time_stop: 07:00PM
+    tz: Europe/Kiev
+  - name: "Jane Doe"
+    existing_appointments:
+      - { start: 11-05-2014 08:00:00, tz: Europe/Kiev, duration: 15m, agenda: "Morning Meeting"}
+      - { start: 11-05-2014 16:00:00, tz: Europe/Kiev, duration: 1h, agenda: "QA collaboration meeting"}
+    working_time_start: 08:00AM
+    working_time_stop: 07:00PM
+    tz: Europe/Kiev
+  - name: "Robert Roe"
+    existing_appointments:
+      - { start: 11-05-2014 13:00:00, tz: Europe/Kiev, duration: 2h, agenda: "PM collaboration meeting 1"}
+#      - { start: 11-05-2014 09:00:00, tz: Europe/Kiev, duration: 4h, agenda: "PM collaboration meeting 2"}
+#      - { start: 11-05-2014 15:00:00, tz: Europe/Kiev, duration: 3h, agenda: "PM collaboration meeting 3"}
+    working_time_start: 09:00AM
+    working_time_stop: 06:00PM
+    tz: Europe/Kiev
+# meeting length (in unit of your choice: m/h/s)
+# please notice, that will be also used as length of each time slot
+requested_meeting_length: 30m
+# Number of possible time-slots that should be found by program
+requested_time_slots: 10
+requested_time_frame:
+  start: 11-05-2014 07:30:00
+  stop: 11-05-2014 23:00:00
+  tz: Europe/Kiev
